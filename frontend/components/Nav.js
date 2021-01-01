@@ -1,6 +1,6 @@
 import { lighten } from 'polished';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCloudDownload, faEllipsisV, faHome, faLemon, faFolderOpen } from '@fortawesome/pro-regular-svg-icons';
+import { icon as faIcon } from '@fortawesome/fontawesome-svg-core';
 import PropTypes from 'prop-types';
 import React from 'react';
 import styled, { withTheme } from 'styled-components';
@@ -79,7 +79,7 @@ class Nav extends React.PureComponent {
 					ref={ this.navigationIcon }
 					type="button"
 				>
-					<FontAwesomeIcon icon={ faEllipsisV } />
+					<FontAwesomeIcon icon={ faIcon("ellipsis-v") } />
 				</button>
 				<ul>
 					{/* Home */}
@@ -87,7 +87,7 @@ class Nav extends React.PureComponent {
 						<ButtonLink
 							className="link"
 							href="/"
-							icon={ <FontAwesomeIcon icon={ faHome } /> }
+							icon={ <FontAwesomeIcon icon={ faIcon("home") } /> }
 							label="Home"
 							onClick={ this.onToggleNav }
 						/>
@@ -98,7 +98,7 @@ class Nav extends React.PureComponent {
 						<ButtonLink
 							className="link"
 							href="/import"
-							icon={ <FontAwesomeIcon icon={ faCloudDownload } /> }
+							icon={ <FontAwesomeIcon icon={ faIcon("cloud-download") } /> }
 							label="Import"
 							onClick={ this.onToggleNav }
 						/>
@@ -109,7 +109,7 @@ class Nav extends React.PureComponent {
 						<ButtonLink
 							className="link"
 							href="/ingredients"
-							icon={ <FontAwesomeIcon icon={ faLemon } /> }
+							icon={ <FontAwesomeIcon icon={ faIcon("lemon") } /> }
 							label="Ingredients"
 							onClick={ this.onToggleNav }
 						/>
@@ -120,7 +120,7 @@ class Nav extends React.PureComponent {
 						<ButtonLink
 							className="link"
 							href="/recipes"
-							icon={ <FontAwesomeIcon icon={ faFolderOpen } /> }
+							icon={ <FontAwesomeIcon icon={ faIcon("folder-open") } /> }
 							label="Recipes"
 							onClick={ this.onToggleNav }
 						/>

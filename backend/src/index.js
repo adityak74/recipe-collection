@@ -62,5 +62,5 @@ server.applyMiddleware({
 
 app.listen({ port: process.env.PORT || 3001 }, (err) => {
 	if (err) throw err;
-	console.log(`Apollo Server ready at http://localhost:${ process.env.PORT }${ server.graphqlPath }`);
+	console.log(`Apollo Server ready at http://localhost:${ process.env.PORT || 3001 }${ server.graphqlPath }`);
 });

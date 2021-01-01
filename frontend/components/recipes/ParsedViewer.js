@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEllipsisH } from '@fortawesome/pro-light-svg-icons';
+import { icon as faIcon } from '@fortawesome/fontawesome-svg-core';
 
 import Button from '../common/Button';
 
@@ -86,7 +86,7 @@ const ParsedViewer = ({ className, id, ingredients, instructions }) => {
 						? (
 							<Button
 								className="showMore"
-								icon={ <FontAwesomeIcon icon={ faEllipsisH } /> }
+								icon={ <FontAwesomeIcon icon={ faIcon("ellipsis-h") } /> }
 							/>
 						)
 						: null

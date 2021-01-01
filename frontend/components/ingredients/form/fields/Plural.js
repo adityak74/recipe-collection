@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMagic } from '@fortawesome/pro-regular-svg-icons';
+import { icon as faIcon } from '@fortawesome/fontawesome-svg-core';
 import PropTypes from 'prop-types';
 import React, { useContext } from 'react';
 import pluralize from 'pluralize';
@@ -43,7 +43,7 @@ const Plural = ({
 				(isPluralSuggestEnabled)
 					? (
 						<FontAwesomeIcon
-							icon={ faMagic }
+							icon={ faIcon("magic") }
 							onClick={ (e) => onSuggestPlural(e) }
 						/>
 					) : null

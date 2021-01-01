@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faEllipsisH } from '@fortawesome/pro-light-svg-icons';
+// import { faEllipsisH } from '@fortawesome/free-light-svg-icons';
 
 import Button from '../common/Button';
 

@@ -1,7 +1,7 @@
 import { List as ImmutableList } from 'immutable';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMagic } from '@fortawesome/pro-regular-svg-icons';
-import { faPlus, faTimes } from '@fortawesome/pro-solid-svg-icons';
+import { icon as faIcon } from '@fortawesome/fontawesome-svg-core';
+import { faPlus, faTimes } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import React, { useContext, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
@@ -179,7 +179,7 @@ const List = ({
 										? (
 											<FontAwesomeIcon
 												className={ (!isEditMode) ? 'disabled' : '' }
-												icon={ faMagic }
+												icon={ faIcon("magic") }
 												onClick={ (e) => onSuggestPlural(e, name) }
 											/>
 										)

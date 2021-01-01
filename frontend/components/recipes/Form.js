@@ -7,8 +7,7 @@ import styled from 'styled-components';
 // import { v4 as uuidv4 } from 'uuid';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEdit } from '@fortawesome/pro-regular-svg-icons';
-import { faWindowClose } from '@fortawesome/pro-light-svg-icons';
+import { icon as faIcon } from '@fortawesome/fontawesome-svg-core';
 
 import { deepCopy, hasProperty } from '../../lib/util';
 import Button from '../common/Button';
@@ -779,7 +778,7 @@ class Form extends Component {
 								? (
 									<Button
 										className="close"
-										icon={ <FontAwesomeIcon icon={ faWindowClose } /> }
+										icon={ <FontAwesomeIcon icon={ faIcon("window-close") } /> }
 										onClick={ (e) => onCloseClick(e) }
 									/>
 								) : null
@@ -851,7 +850,7 @@ class Form extends Component {
 							? (
 								<Button
 									className="edit"
-									icon={ <FontAwesomeIcon icon={ faEdit } /> }
+									icon={ <FontAwesomeIcon icon={ faIcon("edit") } /> }
 									label="Edit"
 									onClick={ (e) => onEditClick(e) }
 								/>
